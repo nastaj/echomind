@@ -2,17 +2,22 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N5C0119RL1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-N5C0119RL1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-N5C0119RL1');
+      gtag("config", "G-N5C0119RL1");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoCampus | Dashboard</title>
+    <title>EchoMind | Home</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -65,45 +70,52 @@
         <p class="how-it-works_p">
           The steps we take to build your confidence.
         </p>
-        <section class="steps">
-          <article>
-            <h3>Step 1</h3>
-            <h4>Practice in VR</h4>
-            <p>
-              Enter a virtual classroom or audience to simulate real
-              presentation pressure.
-            </p>
-          </article>
 
-          <article>
-            <h3>Step 2</h3>
-            <h4>Record Your Presentation</h4>
-            <p>Deliver your talk while being recorded for detailed analysis.</p>
-          </article>
+        <!-- STEPS SECTION -->
+        <section class="section-steps">
+          <div class="steps container grid grid--2-cols grid-center--v">
+            <!-- STEP 01 -->
+            <div class="steps-text--box" id="step-01">
+              <h4>01</h4>
+              <h3 class="heading-tertiary">Practice in VR</h3>
+              <p class="steps-description">Enter a virtual classroom or audience to simulate real presentation pressure.</p>
+            </div>
+            <div class="steps-img--box">
+              <img src="img/step-1.jpg" alt="Illustration of a comitee meeting">
+            </div>
 
-          <article>
-            <h3>Step 3</h3>
-            <h4>Upload Your Recording</h4>
-            <p>Upload your recorded presentation for AI analysis.</p>
-          </article>
+            <!-- STEP 02 -->
+            <div class="steps-img--box" id="step-02">
+              <img src="img/step-2.jpg" alt="Illustration of person looking at charts">
+            </div>
+            <div class="steps-text--box">
+              <h4>02</h4>
+              <h3 class="heading-tertiary">Record Your Presentation</h3>
+              <p class="steps-description">Deliver your talk while being recorded for detailed analysis.</p>
+            </div>
 
-          <article>
-            <h3>Step 4</h3>
-            <h4>AI Feedback</h4>
-            <p>
-              Get quick analysis on eye contact, pacing, tone, clarity and body
-              language.
-            </p>
-          </article>
+            <!-- STEP 03 -->
+            <div class="steps-text--box" id="step-03">
+              <h4>03</h4>
+              <h3 class="heading-tertiary">Upload Your Recording</h3>
+              <p class="steps-description">Upload your recorded presentation for AI analysis.</p>
+            </div>
+            <div class="steps-img--box">
+              <img src="img/step-3.jpg" alt="Illustration of two people discussing a chart board">
+            </div>
 
-          <article class="step-5">
-            <h3>Step 5</h3>
-            <h4>Improve With Daily Challenges</h4>
-            <p>
-              Follow small, manageable tasks designed to build confidence over
-              time.
-            </p>
-          </article>
+            <!-- STEP 04 -->
+            <div class="steps-img--box" id="step-04">
+              <img src="img/step-4.png" alt="Illustration of a person evaluating a data chart">
+            </div>
+            <div class="steps-text--box">
+              <h4>04</h4>
+              <h3 class="heading-tertiary">Receive AI Feedback</h3>
+              <p class="steps-description">
+                Get quick analysis on eye contact, pacing, tone, clarity and body
+                language.
+              </p>
+            </div>
         </section>
       </section>
 

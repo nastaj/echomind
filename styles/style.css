@@ -76,11 +76,12 @@ a {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   width: 100%;
 }
+
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -95,6 +96,39 @@ footer {
   font-size: 0.9rem;
   border-top: 1px solid var(--border-color);
   background-color: white;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* Grids / Flexes */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 3.2rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 12rem;
+}
+
+.grid-center--v {
+  align-items: center;
+}
+
+/* Margins */
+.margin-m {
+  margin-bottom: 3.2rem;
 }
 
 @media (max-width: 768px) {
@@ -209,13 +243,13 @@ footer {
 }
 
 .problem-statement p {
+  font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
 /* HOW IT WORKS SECTION */
 .how-it-works {
   background: var(--card-bg);
-  padding: 2rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   margin-bottom: 8rem;
@@ -232,7 +266,7 @@ footer {
   text-align: center;
 }
 
-.how-it-works .steps {
+/* .how-it-works .steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
@@ -246,6 +280,32 @@ footer {
 
 .how-it-works article {
   margin-top: 2rem;
+} */
+
+/* **************** */
+/*  STEPS SECTION  */
+/* **************** */
+.section-steps {
+  margin-bottom: 8rem;
+}
+
+.steps-img--box img {
+  width: auto;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.steps-text--box h4 {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  color: #adb5bd;
+}
+
+.steps-description {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: var(--text-main);
 }
 
 /* KEY FEATURES SECTION */
@@ -510,4 +570,168 @@ footer {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
+}
+
+/* **************************** */
+/* BELOW 970px (Lower-resolution desktops & Tablets) */
+/* **************************** */
+@media (max-width: 60em) {
+  /* HOME */
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.6rem;
+    gap: 1.6rem;
+  }
+
+  .main-nav-list {
+    font-size: 2rem;
+    gap: 1.6rem;
+  }
+
+  .home-section-hero--background {
+    margin-bottom: 4.8rem;
+  }
+
+  .section-partners {
+    margin-bottom: 4.8rem;
+  }
+
+  .partners-img-box {
+    height: 6.4rem;
+    gap: 2.4rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .newsletter-input {
+    width: 80%;
+    border-radius: 10rem;
+  }
+
+  .newsletter h3 {
+    font-size: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .newsletter-btn {
+    font-size: 1.6rem;
+    border-radius: 1.2rem;
+    padding: 1.8rem 2.4rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 4.8rem;
+    row-gap: 1.6rem;
+  }
+
+  .logo-col {
+    grid-row: 2;
+    grid-column: span 3;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  /* ABOUT US */
+  .heading-primary {
+    font-size: 4.8rem;
+    line-height: 1.2;
+  }
+
+  .grid-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overview h3 {
+    transform: none;
+    margin-bottom: 1.6rem;
+  }
+
+  .about-description--box {
+    border: none;
+    padding: 4.8rem 2.4rem;
+    border-top: 1px solid #000;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .heading-description {
+    font-size: 1.6rem;
+  }
+
+  .theme-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 3.2rem;
+  }
+
+  .themes-img-box img {
+    height: auto;
+    width: 50rem;
+  }
+
+  .heading-tertiary-onAccent {
+    font-size: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .hero-paragraph {
+    font-size: 1.6rem;
+  }
+
+  /* STEPS */
+
+  .section-hero--mobile {
+    display: block;
+    padding: 0;
+  }
+
+  .steps-img {
+    margin: 0 0 3.2rem;
+    padding: 0 3.2rem;
+    height: auto;
+  }
+
+  .steps-pagination {
+    gap: 1.6rem;
+  }
+
+  .steps-pagination a:link,
+  .steps-pagination a:visited {
+    font-size: 1.4rem;
+    padding: 1.6rem;
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  #step-01 {
+    grid-row: 1;
+  }
+
+  #step-02 {
+    grid-row: 4;
+  }
+
+  #step-04 {
+    grid-row: 8;
+  }
 }
